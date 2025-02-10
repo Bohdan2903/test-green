@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 12px 14px;
+        border-radius: 5px;
+        border: 1px solid rgba(234, 234, 234, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- <input type="text" name="firstName" placeholder="Enter your firstName" required  />
+      <input type="text" name="lastName"  placeholder="Enter your lastName" required/>
+      <input type="text" name="country"  placeholder="Enter your country" value="Ukraine" readonly/>
+
+      <input type="color" name="" id="" /> - цвет
+      <input type="date" name="" id="" /> - дата
+      <input type="month" name="" id="" /> - месяц
+      <input type="number" name="" id="" /> - цифры
+      <input type="range" name="" id="" min="0" max="12" step="1" />
+      <input type="search" name="" id="" /> - поиск(почти как текст)
+      <input type="tel" name="" id="" /> - телефон
+      <input type="time" name="" id="" /> -время
+      <input type="url" name="" id="" /> - ссылки
+      <input type="week" name="" id="" /> - неделя
+      <input type="file" name="" id="" /> - файл
+      <input type="hidden" name="" id="" /> - скрытое поле
+      <input type="image" name="" id="" /> - Поле в виде логотипа
+      <input type="password" name="" id="" /> - пароль
+      <input type="radio" name="phone" value="samsung" id="" /> - радио кнопка
+      samsung <input type="radio" name="phone" value="iphone" id="" /> - радио
+      кнопка iphone <input type="checkbox" name="" id="" /> - checkbox
+      <!-- <select name="country">
+        <option value="usa">США</option>
+        <option value="canada">Канада</option>
+        <option value="uk">Велика Британія</option>
+      </select> -->
+
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        required
+        pattern="^[a-zA-Z]{5,10}$"
+        minlength="5"
+      />
+      <input type="email" name="email" placeholder="Email" required />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password23"
+        required
+      />
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        placeholder="Confirm password"
+        required
+      />
+
+      <button type="button" style="margin: 0 auto" id="password-type">
+        change password type
+      </button>
+
+      <button type="submit" style="margin: 0 auto">Register</button>
+    </form>
+
+    <script>
+      document.getElementById("password-type").addEventListener("click", () => {
+        const input = document.getElementById("password");
+
+        if (input.type === "password") {
+          input.type = "text"; // Change to text to reveal input
+        } else {
+          input.type = "password"; // Change back to password to hide input
+        }
+      });
+    </script>
+  </body>
+</html>
